@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float&Clear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Square+Peg&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Roboto Mono', monospace;
+font-family: 'Square Peg', cursive;
+        }
+        .container{
+            width: 900px;
+            border: 4px solid rgb(164, 213, 107);
+            background-color: rgb(200, 208, 205);
+            margin: 33px auto;
+        }
+        .item{
+         border: 4px solid rgb(89, 55, 163);
+         padding: 12px 3px;
+         margin: 21px 3px;
+        }
+        #comp{
+            float: left;
+            width: 40%;
+        }
+        #fruit{
+            /* float: right; */
+            float: left;
+            width: 40%;
+        }
+        #stat{
+            /* float: left; */
+            clear: both;
+            /* clear: right; */
+            width: 100%;
+        }
+        p,h3{
+          text-align: left;
+          text-align: right;
+          text-align: center;
+          text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 344px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut provident perspiciatis fuga, sunt libero commodi quis architecto maiores exercitationem natus, facere vero, quibusdam nam ut quam ducimus? Totam, sed. Atque.</p>
+        </div>
+        <div id="comp" class="item">
+            <h3>comp</h3>
+            <p id="comppara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut provident perspiciatis fuga, sunt libero commodi quis architecto maiores exercitationem natus, facere vero, quibusdam nam ut quam ducimus? Totam, sed. Atque.</p>
+        </div>
+        <div id="stat" class="item">
+            <h3>stat</h3>
+            <p id="statpara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut provident perspiciatis fuga, sunt libero commodi quis architecto maiores exercitationem natus, facere vero, quibusdam nam ut quam ducimus? Totam, sed. Atque.</p>
+        </div>
+        <div id="glass" class="item">
+            <h3>stat</h3>
+            <p id="glasspara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut provident perspiciatis fuga, sunt libero commodi quis architecto maiores exercitationem natus, facere vero, quibusdam nam ut quam ducimus? Totam, sed. Atque.</p>
+        </div>
+    </div>
+</body>
+</html>

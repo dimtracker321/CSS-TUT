@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PositionProp</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 3444px;
+            background-color: rgb(168, 237, 214);
+        }
+     .container{
+         border: 4px solid red;
+         width: 150px;
+         height: 150px;
+         display: inline-block;
+         margin: 2px;
+     }
+     /* CSS position  static(default),relative,absolute,fixed,sticky */
+     #box3{
+
+          /* 
+          relative: it with their parent position 
+          fixed position with respect to window
+
+          position: absolute; it is with their default position */
+          /* top: 6px; */
+          /* left: 10px; */
+          /* position: fixed;
+          right: 4px;
+          bottom: 8px; */
+          /* position: sticky;
+          top:3px */
+         }
+         #box2{
+             /* z-index work for a relative,absolute,fixed,sticky  */
+             z-index: 35;
+             position: relative;
+             left: 45px;
+            background-color: aqua;
+            /* visibility: hidden; and it will hidden place will be there only */
+            /* display: none;  place and postion gone */
+         }
+         #box3{
+             z-index: 34;
+            position: relative;
+            background-color: rgb(169, 58, 147);
+         }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="container" id="box1">1</div>
+    <div class="container" id="box2">2</div>
+    <div class="container" id="box3">3</div>
+    <div class="container" id="box4">4</div> 
+    </div>
+</body>
+</html>
